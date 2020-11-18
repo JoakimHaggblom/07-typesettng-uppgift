@@ -3,17 +3,18 @@
 @font-face {
     font-family: 'varsityregular';
     src: url('fonts/varsity_regular/varsity_regular-webfont.woff2') format('woff2'),
-         url('varsity_regular-webfont.woff') format('woff');
+        url('varsity_regular-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 
 }
 
 
+
 @font-face {
-    font-family: 'lemon_milkbold_italic';
-    src: url('fonts/LEMON_MILK/lemonmilk-bolditalic-webfont.woff2') format('woff2'),
-        url('fonts/LEMON_MILK/lemonmilk-bolditalic-webfont.woff') format('woff');
+    font-family: 'lemon_milkregular';
+    src: url('fonts/LEMON_MILK/lemonmilk-regular-webfont.woff2') format('woff2'),
+        url('lemonmilk-regular-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 
@@ -22,15 +23,25 @@
 @font-face {
     font-family: 'minecrafter_altregular';
     src: url('fonts/minecraft/minecrafter.alt-webfont.woff2') format('woff2'),
-         url('minecrafter.alt-webfont.woff') format('woff');
+        url('minecrafter.alt-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 
 }
+
 @font-face {
     font-family: 'rifle_bats_tfbregular';
     src: url('fonts/guns/rifle_bats_tfb-webfont.woff2') format('woff2'),
-         url('rifle_bats_tfb-webfont.woff') format('woff');
+        url('rifle_bats_tfb-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'glipervelzregular';
+    src: url('fonts/alien/glipervelz-origy_full-webfont.woff2') format('woff2'),
+        url('glipervelz-origy_full-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 
@@ -76,6 +87,7 @@ aside {
 nav {
     float: left;
     width: 20%;
+
 }
 
 footer {
@@ -89,7 +101,7 @@ nav,
 footer {
     padding: 20px;
     letter-spacing: 1.4px;
-    font-family: "rifle_bats_tfbregular"
+    font-family: "lemon_milkregularr"
 
 }
 
@@ -106,22 +118,27 @@ footer {
 
 a:link {
 
-    color: darkgreen;
-
+    color: darkblue;
+      
 }
 
 a:visited {
 
     color: #a66;
+    
 
 }
-
-
 a:hover {
 
     color: green;
-
+text-decoration: none;
 }
+
+a:focus{
+color: lime;
+text-decoration: none;
+}
+
 
 
 
@@ -131,16 +148,37 @@ a:active {
 
 }
 
-p a::after{
-display: inline;
-    content:  url('external-link-52.png');
+a[href*=http] {
+   background: url('external-link-52.png') no-repeat 100% 0;
+    background-size: 12px 12px;
+    padding-right: 20px;
     
+    
+
 
 }
 
 ul li a {
 
-letter-spacing: 2px;
+    letter-spacing: 2px;
 
+
+}
+
+nav ul a{
+
+    border: solid #a66;
+    display: block;
+    padding: 20px 20px;
+    margin-bottom: 20px;
+  
+    
+    
+    
+
+}
+nav ul {
+
+list-style-type: none;
 
 }
