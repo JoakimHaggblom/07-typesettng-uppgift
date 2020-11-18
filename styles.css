@@ -2,82 +2,145 @@
 
 @font-face {
     font-family: 'varsityregular';
-    src: url(fonts/varsity_regular/'varsity_regular-webfont.woff2') format('woff2'),
-         url(fonts/varsity_regular/'varsity_regular-webfont.woff') format('woff');
+    src: url('fonts/varsity_regular/varsity_regular-webfont.woff2') format('woff2'),
+         url('varsity_regular-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 
 }
 
 
+@font-face {
+    font-family: 'lemon_milkbold_italic';
+    src: url('fonts/LEMON_MILK/lemonmilk-bolditalic-webfont.woff2') format('woff2'),
+        url('fonts/LEMON_MILK/lemonmilk-bolditalic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
 
+}
+
+@font-face {
+    font-family: 'minecrafter_altregular';
+    src: url('fonts/minecraft/minecrafter.alt-webfont.woff2') format('woff2'),
+         url('minecrafter.alt-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'rifle_bats_tfbregular';
+    src: url('fonts/guns/rifle_bats_tfb-webfont.woff2') format('woff2'),
+         url('rifle_bats_tfb-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
 
 html {
-    
- font-size: 10px;   
-    font-family: "varsityregular";
-    
-    
+
+    font-size: 14px;
+
+
+
 }
 
 
 
 * {
-  box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 body {
-  margin: 0 auto;
-  min-width: 1000px;
-  max-width: 1400px;
-  line-height: 10px;
-  letter-spacing: 2px;
-   word-spacing: 3px;
+    margin: 0 auto;
+    min-width: 1000px;
+    max-width: 1400px;
+    line-height: 14px;
+    letter-spacing: 5px;
+    word-spacing: 2px;
 }
 
 /* Layout */
 
 section {
-  float: left;
-  width: 50%;
-    
+    float: left;
+    width: 50%;
+    text-indent: 20px;
+
 }
 
 aside {
-  float: left;
-  width: 30%;
+    float: left;
+    width: 30%;
 }
 
 nav {
-  float: left;
-  width: 20%;
+    float: left;
+    width: 20%;
 }
 
 footer {
-  clear: both;
+    clear: both;
 }
 
-header, section, aside, nav, footer {
-  padding: 20px;
-  letter-spacing: 1.4px;
-  font-family: "lemon"
- 
+header,
+section,
+aside,
+nav,
+footer {
+    padding: 20px;
+    letter-spacing: 1.4px;
+    font-family: "rifle_bats_tfbregular"
+
 }
 
 /* header and footer */
 
-header, footer {
-  border-top: 5px solid #a66;
-  border-bottom: 5px solid #a66;
+header,
+footer {
+    border-top: 5px solid #a66;
+    border-bottom: 5px solid #a66;
 }
 
 /* WRITE YOUR CODE BELOW HERE */
 
 
+a:link {
+
+    color: darkgreen;
+
+}
+
+a:visited {
+
+    color: #a66;
+
+}
+
+
+a:hover {
+
+    color: green;
+
+}
 
 
 
+a:active {
+
+    color: black;
+
+}
+
+p a::after{
+display: inline;
+    content:  url('external-link-52.png');
+    
+
+}
+
+ul li a {
+
+letter-spacing: 2px;
 
 
-
-
+}
