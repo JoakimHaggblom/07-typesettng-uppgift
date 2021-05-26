@@ -101,8 +101,8 @@ nav,
 footer {
     padding: 20px;
     letter-spacing: 1.4px;
-    font-family: "lemon_milkregularr"
-
+    font-family: "lemon_milkregularr";
+    
 }
 
 /* header and footer */
@@ -111,6 +111,7 @@ header,
 footer {
     border-top: 5px solid #a66;
     border-bottom: 5px solid #a66;
+    font-size: 1.5rem
 }
 
 /* WRITE YOUR CODE BELOW HERE */
@@ -130,12 +131,12 @@ a:visited {
 }
 a:hover {
 
-    color: green;
+    color: red;
 text-decoration: none;
 }
 
 a:focus{
-color: lime;
+color: darkred;
 text-decoration: none;
 }
 
@@ -144,7 +145,7 @@ text-decoration: none;
 
 a:active {
 
-    color: black;
+    color: maroon;
 
 }
 
@@ -181,4 +182,17 @@ nav ul {
 
 list-style-type: none;
 
+}
+header:first-child{
+text-align: center;
+
+}
+
+p,ul{
+line-height: 1.5em;
+}
+p{
+
+text-align: left;
+    overflow:hidden
 }
